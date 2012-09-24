@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HMTimer.h"
 
-@interface HMViewController : UIViewController
+@interface HMViewController : UIViewController {
+    
+    HMTimer *timer1;
+    HMTimer *timer2;
+    
+}
+
+@property (nonatomic, retain) HMTimer *timer1;
+@property (nonatomic, retain) HMTimer *timer2;
 
 @end
