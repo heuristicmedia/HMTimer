@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		417D747F1610014D005F4903 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417D747E1610014D005F4903 /* UIKit.framework */; };
+		417D74811610014D005F4903 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417D74801610014D005F4903 /* Foundation.framework */; };
+		417D74831610014D005F4903 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417D74821610014D005F4903 /* CoreGraphics.framework */; };
+		417D74891610014D005F4903 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 417D74871610014D005F4903 /* InfoPlist.strings */; };
+		417D748B1610014D005F4903 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 417D748A1610014D005F4903 /* main.m */; };
+		417D748F1610014D005F4903 /* HMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 417D748E1610014D005F4903 /* HMAppDelegate.m */; };
+		417D74911610014D005F4903 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 417D74901610014D005F4903 /* Default.png */; };
+		417D74931610014D005F4903 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 417D74921610014D005F4903 /* Default@2x.png */; };
+		417D74951610014D005F4903 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 417D74941610014D005F4903 /* Default-568h@2x.png */; };
+		417D74981610014D005F4903 /* HMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417D74971610014D005F4903 /* HMViewController.m */; };
+		417D749B1610014D005F4903 /* HMViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417D74991610014D005F4903 /* HMViewController_iPhone.xib */; };
+		417D749E1610014D005F4903 /* HMViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417D749C1610014D005F4903 /* HMViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		417D747A1610014D005F4903 /* HMTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		417D747E1610014D005F4903 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		417D74801610014D005F4903 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		417D74821610014D005F4903 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		417D74861610014D005F4903 /* HMTimer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HMTimer-Info.plist"; sourceTree = "<group>"; };
+		417D74881610014D005F4903 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		417D748A1610014D005F4903 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		417D748C1610014D005F4903 /* HMTimer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HMTimer-Prefix.pch"; sourceTree = "<group>"; };
+		417D748D1610014D005F4903 /* HMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMAppDelegate.h; sourceTree = "<group>"; };
+		417D748E1610014D005F4903 /* HMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMAppDelegate.m; sourceTree = "<group>"; };
+		417D74901610014D005F4903 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		417D74921610014D005F4903 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		417D74941610014D005F4903 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		417D74961610014D005F4903 /* HMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMViewController.h; sourceTree = "<group>"; };
+		417D74971610014D005F4903 /* HMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMViewController.m; sourceTree = "<group>"; };
+		417D749A1610014D005F4903 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HMViewController_iPhone.xib; sourceTree = "<group>"; };
+		417D749D1610014D005F4903 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HMViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		417D74771610014D005F4903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417D747F1610014D005F4903 /* UIKit.framework in Frameworks */,
+				417D74811610014D005F4903 /* Foundation.framework in Frameworks */,
+				417D74831610014D005F4903 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		417D746F1610014D005F4903 = {
+			isa = PBXGroup;
+			children = (
+				417D74841610014D005F4903 /* HMTimer */,
+				417D747D1610014D005F4903 /* Frameworks */,
+				417D747B1610014D005F4903 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		417D747B1610014D005F4903 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				417D747A1610014D005F4903 /* HMTimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		417D747D1610014D005F4903 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				417D747E1610014D005F4903 /* UIKit.framework */,
+				417D74801610014D005F4903 /* Foundation.framework */,
+				417D74821610014D005F4903 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		417D74841610014D005F4903 /* HMTimer */ = {
+			isa = PBXGroup;
+			children = (
+				417D748D1610014D005F4903 /* HMAppDelegate.h */,
+				417D748E1610014D005F4903 /* HMAppDelegate.m */,
+				417D74961610014D005F4903 /* HMViewController.h */,
+				417D74971610014D005F4903 /* HMViewController.m */,
+				417D74991610014D005F4903 /* HMViewController_iPhone.xib */,
+				417D749C1610014D005F4903 /* HMViewController_iPad.xib */,
+				417D74851610014D005F4903 /* Supporting Files */,
+			);
+			path = HMTimer;
+			sourceTree = "<group>";
+		};
+		417D74851610014D005F4903 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				417D74861610014D005F4903 /* HMTimer-Info.plist */,
+				417D74871610014D005F4903 /* InfoPlist.strings */,
+				417D748A1610014D005F4903 /* main.m */,
+				417D748C1610014D005F4903 /* HMTimer-Prefix.pch */,
+				417D74901610014D005F4903 /* Default.png */,
+				417D74921610014D005F4903 /* Default@2x.png */,
+				417D74941610014D005F4903 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		417D74791610014D005F4903 /* HMTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 417D74A11610014D005F4903 /* Build configuration list for PBXNativeTarget "HMTimer" */;
+			buildPhases = (
+				417D74761610014D005F4903 /* Sources */,
+				417D74771610014D005F4903 /* Frameworks */,
+				417D74781610014D005F4903 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HMTimer;
+			productName = HMTimer;
+			productReference = 417D747A1610014D005F4903 /* HMTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		417D74711610014D005F4903 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HM;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Heuristic Media Inc.";
+			};
+			buildConfigurationList = 417D74741610014D005F4903 /* Build configuration list for PBXProject "HMTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 417D746F1610014D005F4903;
+			productRefGroup = 417D747B1610014D005F4903 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				417D74791610014D005F4903 /* HMTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		417D74781610014D005F4903 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417D74891610014D005F4903 /* InfoPlist.strings in Resources */,
+				417D74911610014D005F4903 /* Default.png in Resources */,
+				417D74931610014D005F4903 /* Default@2x.png in Resources */,
+				417D74951610014D005F4903 /* Default-568h@2x.png in Resources */,
+				417D749B1610014D005F4903 /* HMViewController_iPhone.xib in Resources */,
+				417D749E1610014D005F4903 /* HMViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		417D74761610014D005F4903 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417D748B1610014D005F4903 /* main.m in Sources */,
+				417D748F1610014D005F4903 /* HMAppDelegate.m in Sources */,
+				417D74981610014D005F4903 /* HMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		417D74871610014D005F4903 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				417D74881610014D005F4903 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		417D74991610014D005F4903 /* HMViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				417D749A1610014D005F4903 /* en */,
+			);
+			name = HMViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		417D749C1610014D005F4903 /* HMViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				417D749D1610014D005F4903 /* en */,
+			);
+			name = HMViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		417D749F1610014D005F4903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		417D74A01610014D005F4903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		417D74A21610014D005F4903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HMTimer/HMTimer-Prefix.pch";
+				INFOPLIST_FILE = "HMTimer/HMTimer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		417D74A31610014D005F4903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HMTimer/HMTimer-Prefix.pch";
+				INFOPLIST_FILE = "HMTimer/HMTimer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		417D74741610014D005F4903 /* Build configuration list for PBXProject "HMTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417D749F1610014D005F4903 /* Debug */,
+				417D74A01610014D005F4903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		417D74A11610014D005F4903 /* Build configuration list for PBXNativeTarget "HMTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417D74A21610014D005F4903 /* Debug */,
+				417D74A31610014D005F4903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 417D74711610014D005F4903 /* Project object */;
+}
