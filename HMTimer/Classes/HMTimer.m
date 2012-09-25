@@ -20,7 +20,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @synthesize isValid=_isValid;
 @synthesize handler=_handler;
 
-+ (HMTimer *) timerWithDuration:(int64_t)duration
++ (HMTimer *) timerWithDuration:(NSTimeInterval)duration
                           queue:(dispatch_queue_t)queue
                         repeats:(BOOL)repeats
               completionHandler:(void(^)(void))handler {
@@ -34,7 +34,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     
 }
 
-+ (HMTimer *) scheduledTimerWithDuration:(int64_t)duration
++ (HMTimer *) scheduledTimerWithDuration:(NSTimeInterval)duration
                                    queue:(dispatch_queue_t)queue
                                  repeats:(BOOL)repeats
                        completionHandler:(void(^)(void))handler {
@@ -50,7 +50,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     
 }
 
-- (id) initWithDuration:(int64_t)duration
+- (id) initWithDuration:(NSTimeInterval)duration
                          queue:(dispatch_queue_t)queue
                        repeats:(BOOL)repeats
              completionHandler:(void(^)(void))handler {
@@ -71,7 +71,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 - (void) fire {
     
-    dispatch_time_t fireTime = dispatch_time(DISPATCH_TIME_NOW, self.duration * NSEC_PER_SEC);
+    int64_t nanoseconds = self.duration * NSEC_PER_SEC;
+    
+    dispatch_time_t fireTime = dispatch_time(DISPATCH_TIME_NOW, nanoseconds);
     dispatch_after(fireTime, self.queue, ^(void){
         
         if (!self.isValid) {

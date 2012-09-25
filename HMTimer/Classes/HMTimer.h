@@ -14,7 +14,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @interface HMTimer : NSObject {
     
-    int64_t _duration;
+    NSTimeInterval _duration;
     dispatch_queue_t _queue;
     BOOL _repeats;
     BOOL _isValid;
@@ -23,24 +23,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     
 }
 
-@property (nonatomic, readonly) int64_t duration;
+@property (nonatomic, readonly) NSTimeInterval duration;
 @property (nonatomic, readonly) dispatch_queue_t queue;
 @property (nonatomic, readonly) BOOL repeats;
 @property (nonatomic, readonly) BOOL isValid;
 
 @property (nonatomic, readonly) void (^handler)(void);
 
-+ (HMTimer *) timerWithDuration:(int64_t)duration
++ (HMTimer *) timerWithDuration:(NSTimeInterval)duration
                           queue:(dispatch_queue_t)queue
                         repeats:(BOOL)repeats
               completionHandler:(void(^)(void))handler;
 
-+ (HMTimer *) scheduledTimerWithDuration:(int64_t)duration
++ (HMTimer *) scheduledTimerWithDuration:(NSTimeInterval)duration
                                    queue:(dispatch_queue_t)queue
                                  repeats:(BOOL)repeats
                        completionHandler:(void(^)(void))handler;
 
-- (id) initWithDuration:(int64_t)duration
+- (id) initWithDuration:(NSTimeInterval)duration
                   queue:(dispatch_queue_t)queue
                 repeats:(BOOL)repeats
       completionHandler:(void(^)(void))handler;
